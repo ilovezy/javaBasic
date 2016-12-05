@@ -10,15 +10,32 @@ package com.lovezy;
 public class Initial {
   public static void main(String[] args) {
     Girls girl = new Girls();
+    Girls girl2 = new Girls();
 
-    System.out.println(girl.age);
+    girl.age = 14;
+    girl2.age = 15;
 
-    girl.eat();
+    System.out.println(girl.equals(girl2));
 
-    Cc cc = new Cc();
-    cc.age = 10;
-    cc.name = "heli";
-    cc.eat();
-    cc.method();
+    IPlayGame ip1 = new Girls();
+    IPlayGame ip2 = new Psp();
+
+    ip1.playGame();
+    ip2.playGame();
+
+    IPlayGame ip3 = new IPlayGame() {
+      @Override
+      public void playGame() {
+        System.out.println("use no name");
+      }
+    };
+
+    ip3.playGame();
+
+    new IPlayGame(){
+      public void playGame() {
+        System.out.println("use no name2");
+      }
+    }.playGame();
   }
 }
