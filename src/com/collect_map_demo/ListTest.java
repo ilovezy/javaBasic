@@ -108,7 +108,6 @@ public class ListTest {
 
   /**
    * add some strange
-   * @param args
    */
   public void testType() {
     coursesToSelect.add("i am just a string!!!");

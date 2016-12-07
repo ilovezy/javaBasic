@@ -15,7 +15,7 @@ public class TestGeneric {
   public List<Course> courses;
 
   public TestGeneric() {
-    this.courses = new ArrayList<Course>();
+    this.courses = new ArrayList<>();
   }
 
   public void testAdd() {
@@ -32,9 +32,20 @@ public class TestGeneric {
     }
   }
 
+  public void testChild() {
+    ChildCourse ccr = new ChildCourse();
+    ccr.id = "3";
+    ccr.name = "我是子类型的课程对象实例~~~";
+    courses.add(ccr);
+  }
+
+
+
   public static void main(String[] args) {
     TestGeneric tg = new TestGeneric();
     tg.testAdd();
+    tg.testForEach();
+    tg.testChild();
     tg.testForEach();
   }
 }
