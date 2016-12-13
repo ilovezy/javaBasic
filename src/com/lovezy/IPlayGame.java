@@ -8,5 +8,5 @@ package com.lovezy;
  * Created by a on 2016/12/5.
  */
 public interface IPlayGame {
-  public void playGame();
+  void playGame();
 }

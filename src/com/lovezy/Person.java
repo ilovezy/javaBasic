@@ -8,10 +8,10 @@ package com.lovezy;
  * Created by a on 2016/12/5.
  */
 public interface Person {
-  public String name();
+  String name();
 
-  public int age();
+  int age();
 
   @Deprecated
-  public void sing();
+  void sing();
 }
