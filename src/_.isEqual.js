@@ -21,8 +21,12 @@ _.isEqual = function (a, b) {
     return false;
   }
 
+  console.log('more again')
+
   if (a._chain) {
     a = a._wrapped;
+
+    usfuli.com
   }
   if (b._chain) {
     b = b._wrapped;
