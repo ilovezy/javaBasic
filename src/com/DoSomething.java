@@ -5,7 +5,11 @@
 package com;
 
 public class DoSomething {
+  public void print() {
+    System.out.println("helo jack");
+  }
   public static void main(String[] args) {
-
+    DoSomething doSomething = new DoSomething();
+    doSomething.print();
   }
 }
