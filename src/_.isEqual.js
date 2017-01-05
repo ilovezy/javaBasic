@@ -21,10 +21,6 @@ _.isEqual = function (a, b) {
     return false;
   }
 
-  console.log('hyesgi')
-
-  console.log('what')
-
   if (a._chain) {
     a = a._wrapped;
   }
